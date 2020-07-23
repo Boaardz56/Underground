@@ -1,3 +1,9 @@
+
+
+.navbar{
+    background: none;
+    }
+
 body {
     background: url(../../assets/images/cinemabackground.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -5,4 +11,4 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: fixed;
-}
+
