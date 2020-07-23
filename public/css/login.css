@@ -7,7 +7,26 @@ body {
     background-position: fixed;
 }
 
+/* Fixes footer to bottom of page, added borders and font style */
+footer {
+    position:fixed; 
+    bottom: 0; 
+    margin-bottom: 5px;
+    width:100%; 
+    height:60px;
+    color: white;
+    text-align: center;
+    background: transparent;
+}
+/* Github links text color */
+.footerlinks {
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
 .navbar {
     background: none;
     
-  }
+}
+
