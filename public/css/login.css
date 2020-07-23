@@ -6,3 +6,8 @@ body {
     background-size: cover;
     background-position: fixed;
 }
+
+.navbar {
+    background: none;
+    
+  }
