@@ -1,0 +1,36 @@
+.navbar{
+    background: none;
+    color: black;
+    }
+
+img {
+    background: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: fixed;
+    max-height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+#headerDash{
+    color: black;
+}
+
+@media all {
+    img {
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+  }
+
+  #headerDash {
+      position: fixed;
+      left: 0;
+      right: 0;
+      color: white;
+  }
+  
