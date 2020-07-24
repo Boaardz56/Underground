@@ -10,7 +10,7 @@ body{
   /* Profile sidebar */
   .profile-sidebar {
     padding: 20px 0 10px 0;
-    background: #fff;
+    background: transparent;
   }
   
   .profile-userpic img {
@@ -29,7 +29,7 @@ body{
   }
   
   .profile-usertitle-name {
-    color: #5a7391;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 7px;
