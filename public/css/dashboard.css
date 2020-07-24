@@ -1,7 +1,7 @@
-.navbar{
+.navbar {
     background: none;
     color: black;
-    }
+}
 
 img {
     background: no-repeat;
@@ -15,7 +15,7 @@ img {
     position: fixed;
 }
 
-#headerDash{
+#headerDash {
     color: black;
 }
 
@@ -25,12 +25,12 @@ img {
       background-position: center;
       height: 100%;
     }
-  }
+}
 
-  #headerDash {
-      position: fixed;
-      left: 0;
-      right: 0;
-      color: white;
-  }
+#headerDash {
+    position: fixed;
+    left: 0;
+    right: 0;
+    color: white;
+}
   
