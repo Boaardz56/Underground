@@ -2,6 +2,7 @@
 
 .navbar{
     background: none;
+    color: black;
     }
 
 body {
@@ -11,4 +12,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: fixed;
+}
+
+#headerDash{
+    color: black;
 }
