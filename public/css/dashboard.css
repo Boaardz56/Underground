@@ -34,3 +34,25 @@ img {
     color: white;
 }
   
+
+#searchBar {
+    border-radius: 5rem;
+    background: #ffffff;
+    opacity: 0.9;
+}
+
+
+#searchBtn {
+    border-radius: 5rem;
+}
+
+#searchInput {
+    border-radius: 5rem;
+}
+
+.btn {
+    font-weight: 700;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+}
+
