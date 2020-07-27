@@ -38,13 +38,13 @@ input[type=text]:focus {
 
 #profile {
     position: absolute;
-    top: 74%;
+    top: 72%;
     left: 0;
 }
 
 #logout {
     position: absolute;
-    top: 74%;
+    top: 72%;
     right: 0;
 }
 
