@@ -29,7 +29,6 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, (email, password, don
 }));
 
 // passport boiler plate to serialize and deserialize user
-
 passport.serializeUser(function (user, done) {
   done(null, user.id);
 });
