@@ -10,7 +10,7 @@ body{
   /* Profile sidebar */
   .profile-sidebar {
     padding: 20px 0 10px 0;
-    background: transparent;
+    background: gray;
   }
   
   .profile-userpic img {
