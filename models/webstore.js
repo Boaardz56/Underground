@@ -6,22 +6,22 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define("Webstore", {
     store_id: {
       autoIncrement: true,
-      type: DataTypes.INTEGER.UNSIGNED,
-      allowNull: false,
+      type: DataTypes.INTEGER,
+      allowNull: true,
       primaryKey: true
     },
     manager_staff_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
-      allowNull: false,
+      type: DataTypes.INTEGER,
+      allowNull: true,
       unique: true
     },
     address_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
-      allowNull: false,
+      type: DataTypes.INTEGER,
+      allowNull: true,
     },
     last_update: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
       defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
     },
     store_name: {
@@ -31,13 +31,13 @@ module.exports = function(sequelize, DataTypes) {
     },
     createdAt: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
       defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
     },
     updatedAt: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: sequelize.lteral("CURRENT_TIMESTAMP")
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
     }
   }, {
     sequelize,
