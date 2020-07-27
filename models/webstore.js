@@ -28,6 +28,16 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(30),
       allowNull: true,
       defaultValue: "VidsRUs"
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: sequelize.lteral("CURRENT_TIMESTAMP")
     }
   }, {
     sequelize,
