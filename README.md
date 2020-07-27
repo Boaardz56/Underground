@@ -1,5 +1,5 @@
-# Project2
-Project 2
+Underground
+
 # Passport Auth with MySQL and Sequelize Boiler Plate
 
 ## Online Example:
@@ -12,7 +12,7 @@ This is a ready to use boiler plate that uses Passport for User Authentication a
 
 ## Web Tools:
 
-HTML, CSS, Javascript (ES6), Bootswatch, Node.js, Express, Passport, MySQL, Sequelize.
+HTML, CSS, Javascript (ES6), Bootstrap, Node.js, Express, Passport, MySQL, Sequelize, Handelbars, BCrypt.
 
 ## Table of Contents 
 
@@ -29,7 +29,7 @@ To install necessary dependencies, run the following command:
 ```
 npm install
 ```
-
+Using this command will automatically install MySQL, Passport, Sequelize, bCrypt, esLint, and more.
 ## Usage
 ``` 
     To start using this project: 
@@ -49,12 +49,16 @@ npm install
 
 ## Questions
 
-<img src="https://avatars0.githubusercontent.com/u/40499942?v=4" alt="avatar" style="border-radius: 16px" width="30" />
 
-If you have any questions about the repo, open an issue or contact [jaab30](https://github.com/jaab30) directly at jaab30@yahoo.com.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaab30/passport_mysql_sequelize_boiler_plate)
+If you have any questions about the repo, open an issue or contact Chris Holmes, Jackie Lopez, Ryan Schuttig, or Daniel Sorrentino. Github usernames below.
 
+    Cholmes1994
+    Boaardz56
+    ryanschuttig
+    dsorrent2017
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
 
 ## images
 
