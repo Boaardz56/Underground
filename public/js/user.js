@@ -1,4 +1,3 @@
-
 const userName = document.querySelector(".userName");
 
 // Get current User and display email information.

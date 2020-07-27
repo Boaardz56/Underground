@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const auth = require("../middleware/auth");
 
-
 // user authorized views - they all use the "auth" middleware
 router.get("/", auth, (req, res) => res.render("dashboard"));
 router.get("/user/profile", auth, (req, res) => res.render("profile"));

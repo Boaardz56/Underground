@@ -1,4 +1,3 @@
-
 const emailInputReg = document.querySelector("#emailInputReg");
 const passwordInputReg = document.querySelector("#passwordInputReg");
 const passwordTwoInputReg = document.querySelector("#passwordTwoInputReg");

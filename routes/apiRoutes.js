@@ -1,32 +1,28 @@
-
-
-
 var db = require("../models");
 const router = require("express").Router();
-
 
 // Routes
 // =============================================================
 
 console.log("app opening");
 // GET route for getting all webstores
-router.get("/webstores/", function(req, res) {
+router.get("/webstores/", function (req, res) {
   console.log("getting all webstores");
   db.Webstore.findAll({})
-    .then(function(dbWebstore) {
+    .then(function (dbWebstore) {
       console.log("this is webstore db", dbWebstore);
       res.json(dbWebstore);
     });
 });
 
 // Get route for returning posts of a specific category
-router.get("/webstores/store_name/:name", function(req, res) {
+router.get("/webstores/store_name/:name", function (req, res) {
   db.Webstore.findAll({
     where: {
       store_name: req.params.name
     }
   })
-    .then(function(dbWebstore) {
+    .then(function (dbWebstore) {
       res.json(dbWebstore);
     });
 });
@@ -81,7 +77,4 @@ router.get("/webstores/store_name/:name", function(req, res) {
 //         res.json(dbPost);
 //       });
 //   });
-
-
 module.exports = router;
-

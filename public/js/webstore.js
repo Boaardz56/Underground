@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
   // webstoreContainer holds all of our posts
   var webstoreContainer = $(".ws-Container");
@@ -19,12 +19,11 @@ $(document).ready(function() {
     let addressIdEl = $("<td>" + stores.address_id + "</td>");
     let rowEnd = $("</tr>");
     tableEl.append(row, idEl, nameEl, addressIdEl, rowEnd);
-
   }
 
-  function getAllWebstores(){
+  function getAllWebstores() {
     console.log("Webstores ready");
-    $.get("/api/webstores/", function(data) {
+    $.get("/api/webstores/", function (data) {
       console.log("getAllWebstores", data);
       webstores = data;
       if (!data || !data.length) {
@@ -40,7 +39,7 @@ $(document).ready(function() {
   function getWebstoresByStoreName(name) {
     //  var store_name = name || "noNameProvided";
 
-    $.get("/api/webstores/" + store_name, function(data) {
+    $.get("/api/webstores/" + store_name, function (data) {
       console.log("getWebstoreByStoreName", data);
 
       if (!data || !data.length) {
@@ -56,7 +55,7 @@ $(document).ready(function() {
   //function getPosts(category) {
   function getWebstoreByStoreName(name) {
     var store_name = name || "noNameProvided";
-    $.get("/api/webstores/" + store_name, function(data) {
+    $.get("/api/webstores/" + store_name, function (data) {
       console.log("getWebstoreByStoreName", data);
       if (!data || !data.length) {
         // eslint-disable-next-line no-use-before-define
@@ -73,7 +72,7 @@ $(document).ready(function() {
       method: "DELETE",
       url: "/api/webstores/" + id
     })
-      .then(function() {
+      .then(function () {
 
         getPosts(postCategorySelect.val());
       });
