@@ -8,6 +8,20 @@ $(document).ready(function() {
   /////$(document).on("click", "button.edit", handleWsEdit);
   // webstoreNameSelect.on("change", handleWsChange);
   var webstores;
+
+  function appendData(stores) {
+
+    // This function constructs a post's HTML
+    let tableEl = $(".storeTable");
+    let row = $("<tr>");
+    let idEl = $("<td>" + stores.store_id + "</td>");
+    let nameEl = $("<td>" + stores.store_name + "</td>");
+    let addressIdEl = $("<td>" + stores.address_id + "</td>");
+    let rowEnd = $("</tr>");
+    tableEl.append(row, idEl, nameEl, addressIdEl, rowEnd);
+
+  }
+
   function getAllWebstores(){
     console.log("Webstores ready");
     $.get("/api/webstores/", function(data) {
@@ -16,7 +30,10 @@ $(document).ready(function() {
       if (!data || !data.length) {
         //        displayEmpty();
       } else {
-        //        initializeRows();
+        for (let index = 0; index < data.length; index++) {
+          const element = data[index];
+          appendData(element);
+        }
       }
     });
   }
@@ -30,8 +47,7 @@ $(document).ready(function() {
         // eslint-disable-next-line no-use-before-define
         displayEmpty();
       } else {
-        // eslint-disable-next-line no-use-before-define
-        initializeRows(store_name);
+        initializeRows();
       }
     });
   }
@@ -47,7 +63,7 @@ $(document).ready(function() {
         displayEmpty();
       } else {
         // eslint-disable-next-line no-use-before-define
-        initializeRows();
+        appendData(data);
       }
     });
   }
@@ -65,67 +81,7 @@ $(document).ready(function() {
   // Getting the initial list of posts
   getAllWebstores();
   // InitializeRows handles appending all of our constructed post HTML inside
-  // webstoreContainer
-  function initializeRows() {
-    webstoreContainer.empty();
-    var webstoresToAdd = [];
-    for (var i = 0; i < webstores.length; i++) {
-      // eslint-disable-next-line no-use-before-define
-      webstoresToAdd.push(createNewRow (posts[i]));
-    }
-    webstoreContainer.append(postsToAdd);
-  }
-  // eslint-disable-next-line no-redeclare
-  function initializeRows (store_name) {
-    webstoreContainer.empty();
-    var webstoresToAdd = [];
-    for (var i = 0; i < posts.length; i++) {
-      // eslint-disable-next-line no-use-before-define
-      webstoresToAdd.push(createNewRow(posts[i]));
-    }
-    webstoreContainer.append(webstoresToAdd);
-  }
-  // This function constructs a post's HTML
-  function createNewRow(post) {
-    var newPostCard = $("<div>");
-    newPostCard.addClass("card");
-    var newPostCardHeading = $("<div>");
-    newPostCardHeading.addClass("card-header");
-    var deleteBtn = $("<button>");
-    deleteBtn.text("x");
-    deleteBtn.addClass("delete btn btn-danger");
-    var editBtn = $("<button>");
-    editBtn.text("EDIT");
-    editBtn.addClass("edit btn btn-default");
-    var newPostTitle = $("<h2>");
-    var newPostDate = $("<small>");
-    var newPostCategory = $("<h5>");
-    newPostCategory.text(post.category);
-    newPostCategory.css({
-      float: "right",
-      "font-weight": "700",
-      "margin-top":
-        "-15px"
-    });
-    var newPostCardBody = $("<div>");
-    newPostCardBody.addClass("card-body");
-    var newPostBody = $("<p>");
-    newPostTitle.text(post.title + " ");
-    newPostBody.text(post.body);
-    var formattedDate = new Date(post.createdAt);
-    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
-    newPostDate.text(formattedDate);
-    newPostTitle.append(newPostDate);
-    newPostCardHeading.append(deleteBtn);
-    newPostCardHeading.append(editBtn);
-    newPostCardHeading.append(newPostTitle);
-    newPostCardHeading.append(newPostCategory);
-    newPostCardBody.append(newPostBody);
-    newPostCard.append(newPostCardHeading);
-    newPostCard.append(newPostCardBody);
-    newPostCard.data("post", post);
-    return newPostCard;
-  }
+
   // This function figures out which post we want to delete and then calls
   // deletePost
   function handleWsDelete() {
