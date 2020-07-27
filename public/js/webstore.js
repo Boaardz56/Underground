@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  debugger;
+
   // webstoreContainer holds all of our posts
   var webstoreContainer = $(".ws-Container");
   var webstoreNameSelect = $("#ws-name");
@@ -9,6 +9,7 @@ $(document).ready(function() {
   // webstoreNameSelect.on("change", handleWsChange);
   var webstores;
   function getAllWebstores(){
+    console.log("Webstores ready");
     $.get("/api/webstores/", function(data) {
       console.log("getAllWebstores", data);
       webstores = data;
