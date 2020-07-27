@@ -23,7 +23,7 @@ app.set("view engine", "handlebars");
 
 // set up express-session
 app.use(session({
-  secret: 'keyboard cat',
+  secret: "keyboard cat",
   resave: false,
   saveUninitialized: true
 }));
@@ -36,7 +36,7 @@ app.use(passport.session());
 app.use(routes);
 
 // connect to database and start server
-db.sequelize.sync().then(() => {
+db.sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => {
     console.log(`app listening on: http://localhost:${PORT}`);
 
