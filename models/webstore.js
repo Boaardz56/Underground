@@ -1,21 +1,36 @@
+/* jshint indent: 1 */
+/***
+ * Create a table called web
+ */
 module.exports = function(sequelize, DataTypes) {
-  var Todo = sequelize.define("Todo", {
-    text: {
-      type: DataTypes.STRING,
-      // AllowNull is a flag that restricts a todo from being entered if it doesn't
-      // have a text value
+  return sequelize.define("Webstore", {
+    store_id: {
+      autoIncrement: true,
+      type: DataTypes.INTEGER.UNSIGNED,
       allowNull: false,
-      // len is a validation that checks that our todo is between 1 and 140 characters
-      validate: {
-        len: [1, 140]
-      }
+      primaryKey: true
     },
-    complete: {
-      type: DataTypes.BOOLEAN,
-      // defaultValue is a flag that defaults a new todos complete value to false if
-      // it isn't supplied one
-      defaultValue: false
+    manager_staff_id: {
+      type: DataTypes.INTEGER.UNSIGNED,
+      allowNull: false,
+      unique: true
+    },
+    address_id: {
+      type: DataTypes.INTEGER.UNSIGNED,
+      allowNull: false,
+    },
+    last_update: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
+    },
+    store_name: {
+      type: DataTypes.STRING(30),
+      allowNull: true,
+      defaultValue: "VidsRUs"
     }
+  }, {
+    sequelize,
+    tableName: "Webstore"
   });
-  return Todo;
 };
