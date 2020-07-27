@@ -11,6 +11,7 @@
 
 //   //GET route for getting all the posts
 //   app.get("/api//", function (req, res) {
+
 // Requiring our Todo model
 var db = require("../models");
 
@@ -159,3 +160,4 @@ module.exports = function(app) {
       });
   });
 };
+
