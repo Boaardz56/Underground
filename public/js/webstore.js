@@ -4,9 +4,7 @@ $(document).ready(function () {
   var webstoreContainer = $(".ws-Container");
   var webstoreNameSelect = $("#ws-name");
   // Click events for the edit and delete buttons
-  // $(document).on("click", "button.delete", handleWsDelete);
-  /////$(document).on("click", "button.edit", handleWsEdit);
-  // webstoreNameSelect.on("change", handleWsChange);
+ 
   var webstores;
 
   function appendData(stores) {
@@ -27,7 +25,7 @@ $(document).ready(function () {
       console.log("getAllWebstores", data);
       webstores = data;
       if (!data || !data.length) {
-        //        displayEmpty();
+       
       } else {
         for (let index = 0; index < data.length; index++) {
           const element = data[index];
@@ -37,13 +35,13 @@ $(document).ready(function () {
     });
   }
   function getWebstoresByStoreName(name) {
-    //  var store_name = name || "noNameProvided";
+    ;
 
     $.get("/api/webstores/" + store_name, function (data) {
       console.log("getWebstoreByStoreName", data);
 
       if (!data || !data.length) {
-        // eslint-disable-next-line no-use-before-define
+       
         displayEmpty();
       } else {
         initializeRows();
@@ -52,7 +50,7 @@ $(document).ready(function () {
   }
 
   // This function grabs posts from the database and updates the view
-  //function getPosts(category) {
+  
   function getWebstoreByStoreName(name) {
     var store_name = name || "noNameProvided";
     $.get("/api/webstores/" + store_name, function (data) {
