@@ -1,5 +1,6 @@
 
 
+
 var db = require("../models");
 const router = require("express").Router();
 
@@ -81,4 +82,6 @@ router.get("/webstores/store_name/:name", function(req, res) {
 //       });
 //   });
 
+
 module.exports = router;
+
