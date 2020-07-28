@@ -61,7 +61,7 @@ input[type=text]:focus {
 .scroll {
     color: black;
     width: 50%;
-    height: 200px;
+    height: 300px;
     overflow-x: hidden;
     overflow-y: auto;
     margin-top: 50px;
