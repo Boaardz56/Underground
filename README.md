@@ -1,15 +1,9 @@
-Underground
+## Underground
 
-# Passport Auth with MySQL and Sequelize Boiler Plate
-
-## Online Example:
-
-You can find an example of this boiler plate at: https://auth-passport.herokuapp.com/
 
 ## Description
 
-This is a ready to use boiler plate that uses Passport for User Authentication and MySQL with Sequelize for Data Storage.
-
+Underground is a movie store application that focuses on lesser know films and actors. The developers of this application really wanted to shed some light on some of the hidden gems in the film industry and show the world that there are more than just Hollywood movies out there.
 ## Web Tools:
 
 HTML, CSS, Javascript (ES6), Bootstrap, Node.js, Express, Passport, MySQL, Sequelize, Handelbars, BCrypt.
@@ -62,7 +56,7 @@ If you have any questions about the repo, open an issue or contact Chris Holmes,
 
 ## images
 
-<img src="https://user-images.githubusercontent.com/40499942/79766002-661d0e00-82f5-11ea-933f-f8b021c9ab44.jpg" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/79766009-687f6800-82f5-11ea-9f9c-e41d4581bc05.jpg" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/79766015-69b09500-82f5-11ea-957b-8d7b2505c189.jpg" alt="app example" width="600px"/>
+<img src="public/assets/images/Screen Shot 2020-07-27 at 6.52.03 PM.png" alt="app example" width="600px"/>
+<img src="" alt="app example" width="600px"/>
+<img src="" alt="app example" width="600px"/>
 
