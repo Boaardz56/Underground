@@ -16,6 +16,18 @@ router.get("/webstores/", function (req, res) {
     });
 });
 
+router.post("/webstores/", function(req, res) {
+  console.log(req.body.store_id);
+  dWebstore.create({
+    manager_staff_id: req.body.manager_staff_id,
+    address_id: req.body.address_id,
+    store_id: req.body.store_id
+  })
+    .then(function(dbWebstore) {
+      res.json(dbWebstore);
+    });
+});
+
 // // Get route for returning posts of a specific category
 // router.get("/webstores/store_name/:name", function (req, res) {
 //   db.Webstore.findAll({
@@ -51,19 +63,7 @@ router.get("/films/", function (req, res) {
 //       });
 //   });
 
-//   app.post("/webstores", function(req, res) {
-//     console.log(req.body);
 
-//     db.Webstore.create({
-//       manager_staff_id:req.body.manager_staff_id,
-//       address_idody: req.body.address_id,
-//       last_update: req.body.last_update,
-//       store_name: req.body.store_name
-//     })
-//       .then(function(dbWebstore) {
-//         res.json(dbWebstore);
-//       });
-//   });
 
 // DELETE route for deleting webstores
 //   app.delete("/webstores/:id", function(req, res) {
