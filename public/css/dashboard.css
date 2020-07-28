@@ -59,11 +59,12 @@ input[type=text]:focus {
 }
 
 .scroll {
-    background-color: rgba(7, 7, 146, 0.5);
+    color: black;
     width: 30%;
     height: 150px;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: center;
     padding: 20px;
+    margin-right: 100px;
 }
