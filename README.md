@@ -1,18 +1,12 @@
-# Project2
-Project 2
-# Passport Auth with MySQL and Sequelize Boiler Plate
+## Underground
 
-## Online Example:
-
-You can find an example of this boiler plate at: https://auth-passport.herokuapp.com/
 
 ## Description
 
-This is a ready to use boiler plate that uses Passport for User Authentication and MySQL with Sequelize for Data Storage.
-
+Underground is a movie store application that focuses on lesser know films and actors. The developers of this application really wanted to shed some light on some of the hidden gems in the film industry and show the world that there are more than just Hollywood movies out there.
 ## Web Tools:
 
-HTML, CSS, Javascript (ES6), Bootswatch, Node.js, Express, Passport, MySQL, Sequelize.
+HTML, CSS, Javascript (ES6), Bootstrap, Node.js, Express, Passport, MySQL, Sequelize, Handelbars, BCrypt.
 
 ## Table of Contents 
 
@@ -29,7 +23,7 @@ To install necessary dependencies, run the following command:
 ```
 npm install
 ```
-
+Using this command will automatically install MySQL, Passport, Sequelize, bCrypt, esLint, and more.
 ## Usage
 ``` 
     To start using this project: 
@@ -49,16 +43,20 @@ npm install
 
 ## Questions
 
-<img src="https://avatars0.githubusercontent.com/u/40499942?v=4" alt="avatar" style="border-radius: 16px" width="30" />
 
-If you have any questions about the repo, open an issue or contact [jaab30](https://github.com/jaab30) directly at jaab30@yahoo.com.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaab30/passport_mysql_sequelize_boiler_plate)
+If you have any questions about the repo, open an issue or contact Chris Holmes, Jackie Lopez, Ryan Schuttig, or Daniel Sorrentino. Github usernames below.
 
+    Cholmes1994
+    Boaardz56
+    ryanschuttig
+    dsorrent2017
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
 
 ## images
 
-<img src="https://user-images.githubusercontent.com/40499942/79766002-661d0e00-82f5-11ea-933f-f8b021c9ab44.jpg" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/79766009-687f6800-82f5-11ea-9f9c-e41d4581bc05.jpg" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/79766015-69b09500-82f5-11ea-957b-8d7b2505c189.jpg" alt="app example" width="600px"/>
+<img src="public/assets/images/Screen Shot 2020-07-27 at 6.52.03 PM.png" alt="app example" width="600px"/>
+<img src="" alt="app example" width="600px"/>
+<img src="" alt="app example" width="600px"/>
 
