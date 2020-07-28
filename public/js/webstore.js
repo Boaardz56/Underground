@@ -33,6 +33,9 @@ $(document).ready(function () {
       }
     });
   }
+
+  // Getting the initial list of posts
+  getAllWebstores();
   //   function getWebstoresByStoreName(name) {
   //     $.get("/api/webstores/" + store_name, function (data) {
   //       console.log("getWebstoreByStoreName", data);
@@ -69,8 +72,7 @@ $(document).ready(function () {
         getPosts(postCategorySelect.val());
       });
   }
-  // Getting the initial list of posts
-  getAllWebstores();
+
   // InitializeRows handles appending all of our constructed post HTML inside
 
   // This function figures out which post we want to delete and then calls
