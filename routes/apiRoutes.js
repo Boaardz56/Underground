@@ -31,7 +31,7 @@ router.get("/webstores/", function (req, res) {
 //FILM CONNECTION
 router.get("/films/", function (req, res) {
   console.log("getting all films");
-  db.films.findAll({})
+  db.Films.findAll({})
     .then(function (dbFilms) {
       console.log("this is films db", dbFilms);
       res.json(dbFilms);
