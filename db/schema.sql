@@ -2,7 +2,7 @@ DROP SCHEMA IF EXISTS sakila;
 CREATE SCHEMA sakila;
 USE sakila;
 
-CREATE TABLE stores
+CREATE TABLE 
 (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
