@@ -1,7 +1,4 @@
-/* jshint indent: 1 */
-/***
- * Create a table called web
- */
+
 module.exports = function (sequelize, DataTypes) {
   return sequelize.define("Webstore", {
     store_id: {

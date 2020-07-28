@@ -4,7 +4,8 @@ const router = require("express").Router();
 // Routes
 // =============================================================
 
-console.log("app opening");
+//WEBSTORE CONNECTION
+
 // GET route for getting all webstores
 router.get("/webstores/", function (req, res) {
   console.log("getting all webstores");
@@ -15,17 +16,28 @@ router.get("/webstores/", function (req, res) {
     });
 });
 
-// Get route for returning posts of a specific category
-router.get("/webstores/store_name/:name", function (req, res) {
-  db.Webstore.findAll({
-    where: {
-      store_name: req.params.name
-    }
-  })
-    .then(function (dbWebstore) {
-      res.json(dbWebstore);
+// // Get route for returning posts of a specific category
+// router.get("/webstores/store_name/:name", function (req, res) {
+//   db.Webstore.findAll({
+//     where: {
+//       store_name: req.params.name
+//     }
+//   })
+//     .then(function (dbWebstore) {
+//       res.json(dbWebstore);
+//     });
+// });
+
+//FILM CONNECTION
+router.get("/films/", function (req, res) {
+  console.log("getting all films");
+  db.films.findAll({})
+    .then(function (dbFilms) {
+      console.log("this is films db", dbFilms);
+      res.json(dbFilms);
     });
 });
+
 
 //   // Get route for retrieving a single webStore
 //   app.get("/webstores/:id", function(req, res) {
