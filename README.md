@@ -6,7 +6,7 @@
 Underground is a movie store application that focuses on lesser know films and actors. The developers of this application really wanted to shed some light on some of the hidden gems in the film industry and show the world that there are more than just Hollywood movies out there.
 ## Web Tools:
 
-HTML, CSS, Javascript (ES6), Bootstrap, Node.js, Express, Passport, MySQL, Sequelize, Handelbars, BCrypt.
+HTML, CSS, Javascript (ES6), Bootstrap, Node.js, Express, Passport, MySQL, Sequelize, Handelbars, BCrypt, Sequelize Autogeneration, Awesome Fonts.
 
 ## Table of Contents 
 
@@ -56,7 +56,7 @@ If you have any questions about the repo, open an issue or contact Chris Holmes,
 
 ## images
 
-<img src="public/assets/images/Screen Shot 2020-07-27 at 6.52.03 PM.png" alt="app example" width="600px"/>
-<img src="" alt="app example" width="600px"/>
-<img src="" alt="app example" width="600px"/>
+<img src="https://raw.githubusercontent.com/Boaardz56/Underground/master/public/assets/images/Screen%20Shot%202020-07-27%20at%206.52.03%20PM.png" alt="app example" width="600px"/>
+<img src="https://raw.githubusercontent.com/Boaardz56/Underground/master/public/assets/images/Screen%20Shot%202020-07-27%20at%206.52.27%20PM.png" alt="app example" width="600px"/>
+<img src="https://raw.githubusercontent.com/Boaardz56/Underground/master/public/assets/images/Screen%20Shot%202020-07-27%20at%206.53.01%20PM.png" alt="app example" width="600px"/>
 
