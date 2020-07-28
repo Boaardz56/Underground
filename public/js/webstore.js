@@ -11,11 +11,9 @@ $(document).ready(function () {
     // This function constructs a post's HTML
     let tableEl = $(".storeTable");
     let row = $("<tr>");
-    let idEl = $("<td>" + stores.store_id + "</td>");
     let nameEl = $("<td>" + stores.store_name + "</td>");
-    let addressIdEl = $("<td>" + stores.address_id + "</td>");
     let rowEnd = $("</tr>");
-    tableEl.append(row, idEl, nameEl, addressIdEl, rowEnd);
+    tableEl.append(row, nameEl, rowEnd);
   }
 
   function getAllWebstores() {

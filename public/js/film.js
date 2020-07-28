@@ -10,11 +10,10 @@ $(document).ready(function () {
     // This function constructs a post's HTML
     let tableEl = $(".filmTable");
     let row = $("<tr>");
-    let idEl = $("<td>" + filmName.film_id + "</td>");
     let nameEl = $("<td>" + filmName.title + "</td>");
     let descriptionEl = $("<td>" + filmName.description + "</td>");
     let rowEnd = $("</tr>");
-    tableEl.append(row, idEl, nameEl, descriptionEl, rowEnd);
+    tableEl.append(row, nameEl, descriptionEl, rowEnd);
   }
 
   function getAllFilms() {
